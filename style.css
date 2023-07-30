@@ -63,7 +63,10 @@ input[type="text"]:focus {
   font-size: 50px;
   color: white;
 }
-
+.questions li:hover{
+  background-color: #474c86;
+  cursor: pointer;
+}
 .dip-12 {
   display: block;
   position: relative;
