@@ -109,26 +109,39 @@ input[type="text"] {
 .cards {
   display: flex;
   flex-direction: column;
-  background-color:black;
+  background-color: black;
   align-items: center;
 }
 .c-11 {
-  /* width:60%; */
+  width: 100%;
   margin-right: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   border-bottom: 10px solid gray;
+  text-align: center;
+}
+.c-111 {
+  width: 40%;
+  margin: auto;
+}
+.c-111 > h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.c-111 > h4 {
+  font-size: 25px;
 }
 .cardimg {
-  width:50%;
+  width: 50%;
 }
-h4,h2{
+h4,
+h2 {
   color: white;
 }
 /*  question     */
 .drop {
-  background-color:black;
+  background-color: black;
   margin: auto;
   border-bottom: 10px solid gray;
 }
@@ -149,7 +162,7 @@ h4,h2{
   cursor: pointer;
   padding: 24px;
   font-size: 1.6rem;
-   background-color: #222;
+  background-color: #222;
   color: white;
   display: flex;
   flex-direction: row;
@@ -165,22 +178,31 @@ h4,h2{
   cursor: pointer;
 }
 .popup {
-  padding: 20px 30px;
+  padding: 24px;
   font-size: 1.6rem;
-  background-color:black;
+  background-color: #222;
   color: white;
   text-align: left;
   width: 80%;
-  box-sizing: border-box;
+  position: relative;
+  animation: slideDown 0.3s ease;
 }
-.disp-5{
+@keyframes slideDown {
+  from {
+    transform: translateY(-5%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.disp-5 {
   color: white;
   text-align: center;
   margin-top: 50px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.bo{
+.bo {
   margin-bottom: 50px;
 }
 
@@ -189,19 +211,19 @@ h4,h2{
   padding: 50px 0px;
   background-color: black;
 }
-.subfooter{
+.subfooter {
   color: #aaa;
   width: 80%;
   margin: auto;
 }
-.call{
+.call {
   text-align: left;
   margin-bottom: 20px;
 }
 .footer-content {
   display: flex;
   flex-wrap: wrap;
-  justify-content:left;
+  justify-content: left;
   /* max-width: 1200px; */
   /* margin: 0 auto; */
 }
@@ -216,16 +238,16 @@ h4,h2{
   text-decoration: underline;
   cursor: pointer;
 }
-.foot{
+.foot {
   margin-top: 20px;
 }
 @media screen and (max-width: 768px) {
   .footer-section {
-      flex-basis: calc(50% - 20px);
+    flex-basis: calc(50% - 20px);
   }
 }
 
-@media screen and (max-width:960px) and (min-width:600px){
+@media screen and (max-width: 960px) and (min-width: 600px) {
   .disp-2 {
     font-size: 2rem;
     font-weight: 700;
@@ -242,6 +264,44 @@ h4,h2{
     line-height: 1.875rem;
     margin-bottom: 15px;
   }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+  .cardimg {
+    width: 60%;
+    margin: auto;
+  }
+  .c-11 {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 10px solid gray;
+    text-align: center;
+  }
+  .c-111 {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .c-111 > h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  .c-111 > h4 {
+    font-size: 20px;
+  }
+  .cardimg {
+    width: 50%;
+  }
   .title {
     text-align: center;
     color: white;
@@ -252,7 +312,7 @@ h4,h2{
     cursor: pointer;
     padding: 24px;
     font-size: 20px;
-     background-color: #222;
+    background-color: #222;
     color: white;
     display: flex;
     flex-direction: row;
@@ -260,7 +320,7 @@ h4,h2{
     width: 80%;
   }
 }
-@media screen and (max-width:599px) and (min-width:400px){
+@media screen and (max-width: 599px) and (min-width: 400px) {
   .signin {
     /* height: 35px; */
     color: white;
@@ -269,7 +329,7 @@ h4,h2{
     background-color: #e50914;
     margin-left: 10px;
     border: 1px solid red;
-    font-size:12px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -289,6 +349,44 @@ h4,h2{
     line-height: 1.875rem;
     margin-bottom: 15px;
   }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+  .cardimg {
+    width: 50%;
+    margin: auto;
+  }
+  .c-11 {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 10px solid gray;
+    text-align: center;
+  }
+  .c-111 {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .c-111 > h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .c-111 > h4 {
+    font-size: 16px;
+  }
+  .cardimg {
+    width: 40%;
+  }
   .title {
     text-align: center;
     color: white;
@@ -299,7 +397,7 @@ h4,h2{
     cursor: pointer;
     padding: 24px;
     font-size: 20px;
-     background-color: #222;
+    background-color: #222;
     color: white;
     display: flex;
     flex-direction: row;
@@ -334,7 +432,7 @@ h4,h2{
   }
 }
 
-@media screen and (max-width:399px) and (min-width:300px){
+@media screen and (max-width: 399px) and (min-width: 300px) {
   .logo {
     padding: 30px 10px 10px 10px;
     height: 30px;
@@ -356,7 +454,7 @@ h4,h2{
     padding: 4px 16px;
     background-color: #e50914;
     border: 1px solid red;
-    font-size:12px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -376,6 +474,44 @@ h4,h2{
     line-height: 1.875rem;
     margin-bottom: 15px;
   }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+  .cardimg {
+    width: 60%;
+    margin: auto;
+  }
+  .c-11 {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 10px solid gray;
+    text-align: center;
+  }
+  .c-111 {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .c-111 > h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .c-111 > h4 {
+    font-size: 15px;
+  }
+  .cardimg {
+    width: 50%;
+  }
   .title {
     text-align: center;
     color: white;
@@ -386,7 +522,7 @@ h4,h2{
     cursor: pointer;
     padding: 24px;
     font-size: 20px;
-     background-color: #222;
+    background-color: #222;
     color: white;
     display: flex;
     flex-direction: row;
@@ -420,7 +556,7 @@ h4,h2{
   }
 }
 
-@media screen and (max-width:299px) and (min-width:200px){
+@media screen and (max-width: 299px) and (min-width: 200px) {
   .logo {
     padding: 30px 5px 5px 0px;
     height: 25px;
@@ -441,7 +577,7 @@ h4,h2{
     padding: 4px 16px;
     background-color: #e50914;
     border: 1px solid red;
-    font-size:12px;
+    font-size: 12px;
     font-weight: 600;
     cursor: pointer;
   }
@@ -461,6 +597,44 @@ h4,h2{
     line-height: 1.875rem;
     margin-bottom: 15px;
   }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+  }
+  .cardimg {
+    width: 60%;
+    margin: auto;
+  }
+  .c-11 {
+    width: 100%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 10px solid gray;
+    text-align: center;
+  }
+  .c-111 {
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* margin: auto; */
+  }
+  .reverse {
+    flex-direction: column-reverse;
+  }
+  .c-111 > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .c-111 > h4 {
+    font-size: 14px;
+  }
+  .cardimg {
+    width: 50%;
+  }
   .title {
     text-align: center;
     color: white;
@@ -471,7 +645,7 @@ h4,h2{
     cursor: pointer;
     padding: 24px;
     font-size: 20px;
-     background-color: #222;
+    background-color: #222;
     color: white;
     display: flex;
     flex-direction: row;
