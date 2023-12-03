@@ -72,8 +72,9 @@ input[type="text"] {
   background: transparent;
   color: white;
   padding: 20px 200px 20px 20px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 1px solid gray;
+  outline: none;
 }
 .inpbutton {
   background-color: #e50914;
@@ -146,6 +147,7 @@ h2 {
   border-bottom: 10px solid gray;
 }
 .title {
+  padding-top: 20px;
   text-align: center;
   color: white;
   font-size: 3rem;
@@ -224,8 +226,6 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
-  /* max-width: 1200px; */
-  /* margin: 0 auto; */
 }
 
 .footer-section {
@@ -303,6 +303,7 @@ h2 {
     width: 50%;
   }
   .title {
+    padding-top: 20px;
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -386,9 +387,10 @@ h2 {
     font-size: 16px;
   }
   .cardimg {
-    width: 40%;
+    width: 50%;
   }
   .title {
+    padding-top: 20px;
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -417,7 +419,7 @@ h2 {
     background: transparent;
     color: white;
     padding: 20px 200px 20px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid gray;
   }
   .inpbutton {
@@ -512,9 +514,11 @@ h2 {
     font-size: 15px;
   }
   .cardimg {
-    width: 50%;
+    width: 60%;
+    margin-bottom: 20px;
   }
   .title {
+    padding-top: 20px;
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -543,7 +547,7 @@ h2 {
     background: transparent;
     color: white;
     padding: 10px 100px 20px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid gray;
   }
   .inpbutton {
@@ -623,7 +627,6 @@ h2 {
     width: 80%;
     margin-top: 20px;
     margin-bottom: 20px;
-    /* margin: auto; */
   }
   .reverse {
     flex-direction: column-reverse;
@@ -636,9 +639,10 @@ h2 {
     font-size: 14px;
   }
   .cardimg {
-    width: 50%;
+    width: 60%;
   }
   .title {
+    padding-top: 20px;
     text-align: center;
     color: white;
     font-size: 2rem;
@@ -667,7 +671,7 @@ h2 {
     background: transparent;
     color: white;
     padding: 10px 80px 20px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid gray;
   }
   .inpbutton {
